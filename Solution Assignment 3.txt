@@ -1,0 +1,311 @@
+=========Solution 1============
+#include <stdio.h>
+
+int main()
+{
+int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    if(num>=0)
+    printf("Positive Number");
+    else
+    printf("Negative Number");
+    return 0;
+}
+=========Solution 2============
+#include <stdio.h>
+
+int main()
+{
+int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+   num%5==0? printf("Number is divisible by 5") : printf("Number is not divisible by 5");
+   return 0;
+}
+=========Solution 3============
+#include <stdio.h>
+
+int main()
+{
+int num;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+   num%2==0? printf("Number is Even no") : printf("Number is Odd no");
+   return 0;
+}
+=========Solution 4============
+#include<stdio.h>
+int main()
+{
+    int num,even,odd;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+        if(num&1==1)
+        {
+            printf("odd");
+            return 0;
+        }
+        else
+        {
+            printf("even");
+            return 0;
+        }
+}
+=========Solution 5============
+#include <stdio.h>
+
+int main()
+{
+   int n;
+   printf("Enter the number\n");
+   scanf("%d",&n);
+
+(n>99 && n<1000)?printf("Yes it is three-digit number"): printf("No it is not a three-digit number");
+    return 0;
+}
+=========Solution 6============
+#include<stdio.h>
+int main()
+{
+    int n1,n2;
+    printf("Enter the number : ");
+    scanf("%d",&n1);
+    printf("Enter the number : ");
+    scanf("%d",&n2);
+if(n1==n2)
+{
+    printf("%d",n1);
+}
+else
+{
+    if(n1>n2)
+    printf("Number1 is greater");
+    else
+    printf("Number2 is greater");
+}
+   return 0;
+}
+=========Solution 7============
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c,D;
+   printf("Enter the value of a , b , c ");
+   scanf("%d%d%d",&a,&b,&c);
+   D=(b*b)-(4*a*c);
+   D>0?printf("Real and unequal"):D<0?printf("No real roots"):printf("Real and equal");
+    return 0;
+}
+=========Solution 8============
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the year");
+    scanf("%d",&n);
+    if(n%400==0 || (n%4==0 && n%100!=0))
+    printf("Leap year");
+    else
+    printf("Not leap year");
+    return 0;
+}
+=========Solution 9============
+#include <stdio.h>
+
+int main()
+{
+
+   int a, b,c;
+   printf("Enter the three numbers\n");
+   scanf("%d%d%d",&a,&b,&c);
+   if(a>b && a>c)
+   {
+       printf("%d is greatest number",a);
+   }
+   else if(b>c)
+   {
+       if(a==b)
+       printf("%d is greatest number and it appears two times",a);
+       else
+       printf("%d is greatest number ",b);
+   }
+   else if(c>b)
+   {
+       if(a==c)
+       printf("%d is greatest number and it appears two times",a);
+       else
+       printf("%d is greatest number",c);
+   }
+   else if(b==c && a!=b)
+   {
+       printf("%d is greatest number and it appears two times",b);
+   }
+   else
+   printf("%d is greatest number and it appears three times",a);
+
+    return 0;
+}
+=========Solution 10============
+#include <stdio.h>
+
+int main()
+{
+    float CP,SP,profit_percentage,loss_percentage;
+    printf("Enter cost price : ");
+    scanf("%f",&CP);
+    printf("Enter selling price : ");
+    scanf("%f",&SP);
+    if(SP>CP)
+    {
+    printf("Profit percentage is %f",((SP-CP)/CP)*100);
+    }
+    else
+    {
+    printf("Loss percentage is %f",((CP-SP)/CP)*100);
+    }return 0;
+}    
+=========Solution 11============
+#include <stdio.h>
+int main () 
+{
+int a, b, c, d, e;
+printf ("Enter the 5 subjects marks : ");
+scanf ("%d%d%d%d%d", &a, &b, &c, &d, &e);
+if(a>=33&&b>=33&&c>=33&&d>=33&&e>=33)
+{
+    printf("Pass");
+}
+else
+{
+    printf("Fail");
+}
+return 0;
+}
+=========Solution 12============
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    printf("Enter the alphabet\n");
+    scanf("%c",&a);
+    if(a>=65 && a<=90)
+   {
+       printf("Upper case");
+   }
+    else if(a>=97 && a<=122)
+    {
+        printf("Lower case");
+    }
+    else
+   {
+       printf("Input is not alphabet");
+    }
+    return 0;
+}    
+=========Solution 13============
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+    if(a%3==0 && a%2==0)
+    {
+        printf("%d is divisible by 3 and 2",a);
+    }
+    else
+    {
+        printf("It is not divisible by 3 and 2.");
+    }
+    return 0;
+}
+
+=========Solution 14============
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter the number\n");
+    scanf("%d",&num);
+    if(num%7==0 || num%3==0)
+    printf("%d is divisible by 7 or divisible by 3",num);
+    else
+    printf("It is not divisible by 7 or 3");
+    return 0;
+}    
+=========Solution 15============
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+   if(num==0)
+   printf("Number is Zero");
+   else if(num>0)
+   printf("Number is Positive");
+   else 
+   printf("Number is Negative");
+   return 0;
+}
+=========Solution 16============
+#include <stdio.h>
+
+int main()
+{
+    int b;
+    char a;
+    printf("Enter the alphabet\n");
+    scanf("%c",&a);
+    if(a>=65 && a<=90)
+   {
+       printf("Upper case");
+   }
+    else if(a>=97 && a<=122)
+    {
+        printf("Lower case");
+    }
+    else if(a>=48 && a<=57)
+   {
+       printf("Input is digit");
+    }
+    else
+    {
+        printf("Input is special charecter");
+    }
+    return 0;
+}    
+=========Solution 17============
+#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   printf("Enter the length of sides of triangle: ");
+   scanf("%d%d%d",&a,&b,&c);
+   ((a+b)>c || (b+c)>a || (a+c)>b)? printf("Triangle is valid") : printf("Triangle is not valid");
+   return 0;
+}
+=========Solution 18============
+#include <stdio.h>
+
+int main()
+{
+  int m;
+  printf("Enter the month number ");
+  scanf("%d",&m);
+  if(m%2==0)
+  {
+      if(m==2)
+      printf("28 days");
+      else
+      printf("30 days");
+  }
+  else
+  printf("31 days");
+   return 0;
+}
