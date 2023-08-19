@@ -1,0 +1,111 @@
+=========Solution 1============
+#include<stdio.h>
+int main()
+{
+    printf("Hello Students");
+    return 0;
+}
+
+=========Solution 2==========
+#include<stdio.h>
+int main()
+{
+    printf("Hello\nStudents");
+    return 0;
+}
+=========Solution 3============
+#include<stdio.h>
+int main()
+{
+    printf("\"MySirG\"");
+    return 0;
+}
+=========Solution 4===========
+#include<stdio.h>
+int main()
+{
+    int r,area;
+    printf("Enter the radius of circle : ");
+    scanf("%d",&r);
+    area=3.14*r*r;
+    printf("Area of circle is %d",area);
+    return 0;
+}
+=========Solution 5============
+#include<stdio.h>
+int main()
+{
+    int a;
+    a = printf("String\n");
+    
+    printf(" \nlength of string is : %d",a);
+
+    return 0;
+}
+
+=========Solution 6============
+#include<stdio.h>
+int main()
+{
+    printf("The name of the user is \"Md Asif Ali\"");
+    return 0;
+}
+
+=========Solution 7=============
+#include<stdio.h>
+int main()
+{
+    printf("%%d");
+    return 0;
+}
+
+=========Solution 8===============
+
+#include<stdio.h>
+int main()
+{
+    printf("\\n");
+    return 0;
+}
+=========Solution 9===============
+
+#include<stdio.h>
+int main()
+{
+    printf("\\\\");
+    return 0;
+}
+=========Solution 10===============
+#include<stdio.h>
+int main()
+{
+  int d,m,y;
+  printf("Enter the date: ");
+  scanf("%d%d%d",&d,&m,&y);
+  printf("Day-%d ,Month-%d, Year-%d",d,m,y);
+  return 0;
+}
+
+=========Solution 11===============
+#include<stdio.h>
+int main()
+{
+  int H,M;
+  printf("Enter the time: ");
+  scanf("%d%d",&H,&M);
+  printf("Hour-%d and Minute-%d",H,M);
+  return 0;
+}
+
+=========Solution 12=================
+
+#include<stdio.h>
+int main()
+{
+    int x=printf("ineuron");
+    printf("%d",x);
+    return 0;
+}
+
+Output : ineuron7
+
