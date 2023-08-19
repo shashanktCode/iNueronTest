@@ -1,0 +1,129 @@
+=========Solution 1============
+#include<stdio.h>
+int main()
+{
+    int i=1;
+
+while(i<=5)
+{
+    printf("MySirG\n");
+    i++;
+}
+}
+=========Solution 2============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+
+while(i<=10)
+{
+    printf("%d\n",i);
+    i++;
+}
+}
+
+=========Solution 3============
+
+#include<stdio.h>
+int main()
+{
+    int i=10;
+
+while(i>=1)
+{
+    printf("%d\n",i);
+    i--;
+}
+}
+
+=========Solution 4============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+
+while(i<=10)
+{
+    printf("%d\n",2*i-1);
+    i++;
+}
+}
+=========Solution 5============
+
+#include<stdio.h>
+int main()
+{
+    int i=10;
+
+while(i>=1)
+{
+    printf("%d\n",2*i-1);
+    i--;
+}
+}
+
+=========Solution 6============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+
+while(i<=10)
+{
+    printf("%d\n",2*i);
+    i++;
+}
+}
+
+=========Solution 7============
+
+#include<stdio.h>
+int main()
+{
+    int i=10;
+    while(i>=1)
+    {
+        printf("%d\n",i*2);
+        i--;
+    }
+}
+=========Solution 8============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("%d\n",i*i);
+        i++;
+    }
+}
+=========Solution 9============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("%d\n",i*i*i);
+        i++;
+    }
+}
+=========Solution 10============
+
+#include<stdio.h>
+int main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("%d\n",i*5);
+        i++;
+    }
+}
