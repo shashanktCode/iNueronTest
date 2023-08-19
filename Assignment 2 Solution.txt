@@ -1,0 +1,209 @@
+
+=======================Solution 1======================
+#include<stdio.h>
+int main() {
+   int num,num2,i;
+   printf("
+enter a number");
+   scanf("%d" , &num);
+   num2=num%10;    //storing unit digit in num2
+   printf("
+ unit digit of %d is: %d",num,num2);
+      for(i=2;i<=num2/2;++i) {    //loop till half of unit digit
+      if(num2%i==0) { //calculate multiples
+         printf("
+ multiple of %d is : %d ",num2,i);
+      }
+   }
+return 0;
+}
+========================Sulotion 2======================
+#include<stdio.h>
+int main()
+{
+    int Num,lastdigit;
+    printf("Enter a number: ");
+    scanf("%d",&Num);
+    lastdigit=Num/10;
+    printf("The unit digit of this number is %d",lastdigit);
+    return 0;
+}
+========================Sulotion 3======================
+#include<stdio.h>
+int main() {
+  int first, second, temp;
+  printf("Enter first number: ");
+  scanf("%d", &first);
+  printf("Enter second number: ");
+  scanf("%d", &second);
+  temp = first;
+  first = second;
+  second = temp;
+  printf("After swapping, first number = %d\n", first);
+  printf("After swapping, second number = %d", second);
+  return 0;
+}
+========================Sulotion 4======================
+#include<stdio.h>
+int main() {
+  int first, second, sum;
+  printf("Enter first number: ");
+  scanf("%d", &first);
+  printf("Enter second number: ");
+  scanf("%d", &second);
+  sum=first+second;
+  first=sum-first;
+  second=sum-second;
+  printf("After swapping, first number = %d\n", first);
+  printf("After swapping, second number = %d", second);
+  return 0;
+}
+========================Sulotion 5======================
+#include<stdio.h>
+int main()
+{
+    int Num,temp,sum=0;
+    printf("Enter a number: ");
+    scanf("%d",&Num);
+   while(Num>0)
+   {
+       temp=Num%10;
+       sum=sum+temp;
+       Num=Num/10;
+   }
+   printf("Sum of Number is %d",sum);
+}
+========================Sulotion 6======================
+#include <stdio.h>
+int main() 
+{  
+    char c,f;
+    
+    printf("Enter a character: ");
+    scanf("%c", &c); 
+    f=c;
+    printf("ASCII value of %c = %d", c, f);
+    return 0;
+}
+========================Sulotion 7======================
+#include<stdio.h>
+int main()
+{
+    int num,position=1;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    while(num)
+    {
+        if(num%2==1)
+        {
+            printf("%d",position);
+            return 0;
+        }
+        else
+        {
+            position++;
+            num=num/2;
+        }
+    }
+}
+========================Sulotion 8======================
+#include<stdio.h>
+int main()
+{
+    int num,even,odd;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+        if(num&1==1)
+        {
+            printf("odd");
+            return 0;
+        }
+        else
+        {
+            printf("even");
+            return 0;
+        }
+}
+========================Sulotion 9======================
+#include <stdio.h>
+int main()
+{
+   printf("The size of int is %d\n",sizeof(int));
+   printf("The size of float is %d\n",sizeof(float));
+   printf("The size of double is %d\n",sizeof(double));
+   printf("The size of char is %d\n",sizeof(char));
+   return 0;
+}
+=======================Sulotion 10======================
+#include <stdio.h>
+int main()
+{
+    int num,Newnum;
+   printf("Enter the number:  ");
+   scanf("%d",&num);
+   num=num/10;
+   Newnum=num*10;
+   printf("New number will be %d",Newnum);
+   return 0;
+}
+=======================Sulotion 11======================
+#include <stdio.h>
+int main()
+{
+    int num,digit, Newnum;
+   printf("Enter the number:  ");
+   scanf("%d",&num);
+   
+   printf("Enter a digit:  ");
+   scanf("%d",&digit);
+   
+   Newnum=(num*10)+digit;
+   printf("New number will be %d",Newnum);
+   return 0;
+}
+=======================Sulotion 12======================
+#include<stdio.h>
+int main()
+{
+    float INR,USD=76.23,Rupee;
+    printf("Enter the amount of Indian rupee : ");
+    scanf("%f",&Rupee);
+    USD=Rupee/76.23;
+    printf("%f",USD);
+    return 0;
+}
+=======================Sulotion 13======================
+#include <stdio.h>
+int main()
+{
+    int num,rem, Newnum,dev,m,s,t;
+   printf("Enter the number:  ");
+   scanf("%d",&num);
+   rem=num%10;
+  dev=num/10;
+  m=dev%10;
+  s=dev/10;
+  t=(m*10)+s;
+  Newnum=(t*10)+rem;
+  printf("New number will be %d",Newnum);
+}
+========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
